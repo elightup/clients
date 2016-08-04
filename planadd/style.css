@@ -1,11 +1,15 @@
 
 body {
-min-width: 960px;
+font: normal normal 12px 'Trebuchet MS', Trebuchet, Verdana, sans-serif;
+color: #666666;
+background: #ffffff none repeat scroll top left;
+padding: 0 0 0 0;
 }
+.navbar {
+    min-height: 0; 
+}
+
 .content-outer, .content-fauxcolumn-outer, .region-inner {
-min-width: 960px;
-max-width: 960px;
-_width: 960px;
 }
 .main-inner .columns {
 padding-left: 0px;
