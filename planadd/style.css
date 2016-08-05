@@ -5,63 +5,6 @@ color: #666666;
 background: #ffffff none repeat scroll top left;
 padding: 0 0 0 0;
 }
-.navbar {
-    min-height: 0; 
-}
-
-.content-outer, .content-fauxcolumn-outer, .region-inner {
-}
-.main-inner .columns {
-padding-left: 0px;
-padding-right: 310px;
-}
-.main-inner .fauxcolumn-center-outer {
-left: 0px;
-right: 310px;
-/* IE6 does not respect left and right together */
-_width: expression(this.parentNode.offsetWidth -
-parseInt("0px") -
-parseInt("310px") + 'px');
-}
-.main-inner .fauxcolumn-left-outer {
-width: 0px;
-}
-.main-inner .fauxcolumn-right-outer {
-width: 310px;
-}
-.main-inner .column-left-outer {
-width: 0px;
-right: 100%;
-margin-left: -0px;
-}
-.main-inner .column-right-outer {
-width: 310px;
-margin-right: -310px;
-}
-#layout {
-min-width: 0;
-}
-#layout .content-outer {
-min-width: 0;
-width: 800px;
-}
-#layout .region-inner {
-min-width: 0;
-width: auto;
-}
-body#layout div.add_widget {
-padding: 8px;
-}
-body#layout div.add_widget a {
-margin-left: 32px;
-}
-
-body {
-font: normal normal 12px 'Trebuchet MS', Trebuchet, Verdana, sans-serif;
-color: #666666;
-background: #ffffff none repeat scroll top left;
-padding: 0 0 0 0;
-}
 html body .region-inner {
 min-width: 0;
 max-width: 100%;
@@ -722,5 +665,3 @@ outline: 0 none;
 padding: 5px 6px !important;
 transition: all 0.1s linear 0s;
 }
-
--->
