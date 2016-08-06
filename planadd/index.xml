@@ -49,6 +49,11 @@
                 </style>
             </b:if>
         </b:if>
+        <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+            <style type='text/css'>
+                .comments{display:none !important;}
+            </style>
+        </b:if>
         <!-- Auto Read More Body Script End -->
     </head>
     <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
@@ -501,19 +506,37 @@
                                             <b:if cond='data:blog.url == data:blog.homepageUrl'>
                                                 <link href='http://studymovie.net/planadd/camera.css' media='all' rel='stylesheet' type='text/css'/>
                                                 <style>
-                                                    .text1 {
-                                                    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
-                                                    bottom: 11px;
+                                                    .recent-post {
+                                                    width:100%;
+                                                    overflow:hidden;
+
+                                                    }
+                                                    .recent-post img {
+                                                    width:100%;
+                                                    }
+                                                    .recent-post .recent-post__title {
+                                                    background: rgba(0, 0, 0, 0.77) none repeat scroll 0 0;
                                                     color: #b2b935;
-                                                    font: 16px/19px &quot;Open Sans&quot;,sans-serif;
-                                                    margin-bottom: 4px;
-                                                    padding: 5px 0;
+                                                    font: 16px/19px "Open Sans",sans-serif;
+                                                    padding: 5px;
                                                     position: absolute;
                                                     text-align: center;
                                                     text-transform: uppercase;
-                                                    width: 100%;
-                                                    font-weight:normal !important;
+                                                    left: 15px;
+                                                    right: 15px;
+                                                    bottom: 0;
                                                     }
+
+                                                    .recent-post .recent-post__title a{
+                                                    text-decoration: none;
+                                                    color: #B2B935 !important;
+                                                    }
+
+
+                                                    .recent-post .recent-post-title {
+                                                        padding-bottom:20px;
+                                                    }
+
                                                     .camera_loader {
                                                     background: url(&quot;https://sites.google.com/a/add-group.net/planadd/htmlboxtesting/camera-loader.gif&quot;) no-repeat scroll center center rgba(255, 255, 255, 0.9);
                                                     }
@@ -674,6 +697,152 @@
                                                     .home-slider .slider .camera_prev span {
                                                     background: url(&quot;https://sites.google.com/a/add-group.net/planadd/left.png&quot;) no-repeat scroll -12px 0 rgba(0, 0, 0, 0);
                                                     }
+                                                    .caroufredsel_prev,
+                                                    .caroufredsel_next {
+                                                    background: url(http://livedemo00.template-help.com/joomla_49574/templates/theme1972/images/template/slider-pagination.gif) no-repeat #dca449;
+                                                    position: absolute;
+                                                    bottom: 0;
+                                                    display: block;
+                                                    height: 35px !important;
+                                                    width: 35px !important;
+                                                    -webkit-transition: all 0.5s ease;
+                                                    -moz-transition: all 0.5s ease;
+                                                    -o-transition: all 0.5s ease;
+                                                    transition: all 0.5s ease;
+                                                    }
+                                                    .caroufredsel_prev:hover,
+                                                    .caroufredsel_next:hover {
+                                                    background-color: #363636;
+                                                    }
+                                                    .caroufredsel_prev span,
+                                                    .caroufredsel_next span {
+                                                    display: block;
+                                                    cursor: pointer;
+                                                    -webkit-transition: all 0.5s ease;
+                                                    -moz-transition: all 0.5s ease;
+                                                    -o-transition: all 0.5s ease;
+                                                    transition: all 0.5s ease;
+                                                    }
+                                                    .caroufredsel_prev {
+                                                    right: 35px;
+                                                    background-position: 13px 9px;
+                                                    }
+                                                    .caroufredsel_next {
+                                                    right: 0px;
+                                                    background-position: -23px 9px;
+                                                    }
+                                                    /*Pagination*/
+                                                    .caroufredsel_pagination {
+                                                    text-align: center;
+                                                    }
+                                                    .caroufredsel_pagination a {
+                                                    display: inline-block;
+                                                    padding: 0 0.5em;
+                                                    }
+                                                    .caroufredsel_prev,
+                                                    .caroufredsel_next {
+                                                    background: url(http://livedemo00.template-help.com/joomla_49574/templates/theme1972/images/template/slider-pagination.gif) no-repeat #ffffff !important;
+                                                    cursor:pointer;
+                                                    }
+                                                    .caroufredsel_prev:hover,
+                                                    .caroufredsel_next:hover {
+                                                    background-color: #363636 !important;
+                                                    }
+                                                    .caroufredsel_prev {
+                                                    background-position: 13px -26px  !important;
+                                                    }
+                                                    .caroufredsel_prev:hover {
+                                                    background-position: 13px 9px  !important;
+                                                    }
+                                                    .caroufredsel_next {
+                                                    background-position: -29px 9px  !important;
+                                                    }
+                                                    .caroufredsel_next:hover {
+                                                    background-position: -29px -26px  !important;
+                                                    }
+                                                    div.disabled{
+                                                    cursor:inherit;
+                                                    }
+                                                    h3 {margin-bottom:20px;}
+                                                    a.gal:hover span {
+                                                    background-position:center center !important;
+                                                    }a.gal:hover img {
+                                                    opacity: 0.6;
+                                                    }
+                                                    a.gal span {
+                                                    bottom: 0;
+                                                    display: block;
+                                                    left: 0;
+                                                    position: absolute;
+                                                    right: 0;
+                                                    top: 0;
+                                                    transition: all 0.5s ease 0s;
+                                                    }
+                                                    h3 {
+                                                    /*border-bottom: 1px solid #B7B7B7;*/
+                                                    color: #333333;
+                                                    font-size: 25px;
+                                                    line-height: 25px;
+                                                    margin-bottom: 17px;
+                                                    padding-bottom: 6px;
+                                                    padding-top:0;margin-top:0;
+                                                    font-family:&#39;Trebuchet MS&#39;,Arial,Helvetica,sans-serif;
+                                                    text-transform: uppercase;
+                                                    }
+                                                    a.btn {
+                                                    color: #B2B935;
+                                                    display: inline-block;
+                                                    margin-top: 12px;
+                                                    text-decoration: underline;
+                                                    }
+                                                    .page1 .text1 {
+                                                    line-height: 17px;
+                                                    margin-bottom: 5px;
+                                                    }
+                                                    .text1 {
+                                                    color: #B2B935;
+                                                    font: bold 16px/19px &#39;Open Sans&#39;,sans-serif;
+                                                    margin-bottom: 4px;
+                                                    text-transform: uppercase;
+                                                    }
+                                                    .gallery1 {width:960px;clear:both;margin-left:-10px;}
+                                                    a.gal img {
+                                                    box-shadow: 0 0 0 #FFFFFF;
+                                                    transition: all 0.5s ease 0s;
+                                                    }
+                                                    .gallery1 a.gal {
+                                                    margin-bottom: 12px;
+                                                    }
+                                                    a.gal {
+                                                    display: block;
+                                                    position: relative;
+                                                    }
+                                                    .grid_3 {
+                                                    width: 226px;
+                                                    text-align:center;
+                                                    }
+                                                    .grid_12 {width:940px;position:relative;}
+                                                    .grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {
+                                                    display: inline;
+                                                    float: left;
+                                                    margin-left: 10px !important;
+                                                    gallery1                                      margin-right: 5px !important;
+                                                    }
+                                                    /*#project3 {margin-right:0;}*/
+                                                    a.prev, a.next {
+                                                    position:absolute !important;
+                                                    left:auto !important;
+                                                    }
+                                                    a.prev {
+                                                    right:26px !important;
+                                                    top:0 !important;
+                                                    }
+                                                    a.next {
+                                                    right:-26px !important;
+                                                    top:0 !important;
+                                                    }
+                                                    .image_carousel .caroufredsel_wrapper a {float:none !important;}
+                                                    .posts-description { padding-left:240px; }
                                                 </style>
 
                                                 <div class=' home-slider clearfix lazy-load-box trigger effect-slidedown ' data-delay='0' data-motopress-static-file='static/static-slider.php' data-motopress-type='static' data-speed='500' style='height:600px;-webkit-transition: all 600ms ease; -moz-transition: all 600ms ease; -ms-transition: all 600ms ease; -o-transition: all 600ms ease; transition: all 600ms ease;'>
@@ -811,19 +980,9 @@
                                                 </div>
                                                 <br style='clear:both'/>
                                                 <br/>
-                                                <style>
-                                                    .recent-post {
-                                                        width:100%;
-                                                        overflow:hidden;
 
-                                                    }
-                                                    .recent-post img {
-                                                        width:100%;
-                                                        height:auto;
-                                                    }
-                                                </style>
                                                 <div class='recent-post'>
-                                                    <h3 class="recent-post__title">RECENT</h3>
+                                                    <h3 class="recent-post-title">RECENT</h3>
                                                     <script type='text/javascript'>
                                                         //<![CDATA[
                             imgrp = new Array();
@@ -886,11 +1045,11 @@
                                     m = month2[u2] ; break;
                                   }
                                 }
-                                var trtd = "<li id='project" + i + "' class='col-md-3'> <a class='gal' href='" + posturl + "'><img alt='' src='" + img[i] + "'/><span style='background:url(https://sites.google.com/a/add-group.net/planadd/htmlboxtesting/magnify.png) no-repeat scroll center -100px rgba(0, 0, 0, 0)'/></a> <div class='text1'><a href='" + posturl +"'> " + posttitle + "</a></div>  </li>";
+                                var trtd = "<li id='project" + i + "' class='col-md-3'> <a class='gal' href='" + posturl + "'><img alt='' width='263px' height='186px' src='" + img[i] + "'/><span style='background:url(https://sites.google.com/a/add-group.net/planadd/htmlboxtesting/magnify.png) no-repeat scroll center -100px rgba(0, 0, 0, 0)'/></a> <div class='recent-post__title'><a href='" + posturl +"'> " + posttitle + "</a></div>  </li>";
                                 project+= trtd;
                                 j++;
                               }
-                              document.write('<div id="project-planadd" class="row">' + project + ' </div>');
+                              document.write('<div id="project-planadd" class="row row-eq-height">' + project + ' </div>');
                                 $("#project-planadd").owlCarousel();
 
                             }
@@ -1017,13 +1176,18 @@
                         //]]>
                                             </script>
                                             <div class='row'>
-                                                <div class='col-md-8'>
-                                                    <div class='column-center-inner'>
+                                                <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+                                                    <style>
+                                                        .col-md-8 { width: 100% !important; }
+                                                    </style>
+                                                </b:if>
+                                                <div class='col-md-8 column-center-inner'>
                                                         <b:if cond='data:blog.pageType == &quot;index&quot;'>
                                                             <h3 class='ournews' style='margin-bottom:0'>
                                                                 Our News
                                                             </h3>
                                                         </b:if>
+
                                                         <b:section class='main' id='main' showaddelement='no'>
                                                             <b:widget id='Blog1' locked='true' title='블로그 게시물' type='Blog' version='1' visible='true'>
                                                                 <b:includable id='main' var='top'>
@@ -1617,6 +1781,7 @@
                                                                         <meta expr:content='data:post.id' itemprop='postId'/>
                                                                         <a expr:name='data:post.id'/>
                                                                         <b:if cond='data:post.title'>
+                                                                        <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
                                                                             <h3 class='post-title entry-title' itemprop='name'>
                                                                                 <b:if cond='data:post.link'>
                                                                                     <a expr:href='data:post.link'>
@@ -1637,14 +1802,105 @@
                                                                                 </b:if>
                                                                             </h3>
                                                                         </b:if>
+                                                                        </b:if>
                                                                         <div class='post-header'>
                                                                             <div class='post-header-line-1'/>
                                                                         </div>
                                                                         <b:if cond='data:blog.metaDescription == &quot;&quot;'>
                                                                             <!-- Then use the post body as the schema.org description,
                                         for good G+/FB snippeting. -->
-                                                                            <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='description articleBody'>
+                                                                            <div class='post-body entry-content manh-1' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='description articleBody'>
                                                                                 <data:post.body/>
+                                                                                <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+                                                                                    <script type='text/javascript'>
+                                                                                        //<![CDATA[
+                            imgrp = new Array();
+                            imgrp[0] = "http://add-group.net/Cms_Data/Sites/admin/Sites/admin_english/Files/no%20image.jpg";
+                            showRandomImgp = true;
+                            aBoldp = true;
+                            summaryPost = 70;
+                            function removeHtml(strx,chop){
+                              var s = strx.split("<");
+                              for(var i=0;i<s.length;i++){
+                                if(s[i].indexOf(">")!=-1){
+                                  s[i] = s[i].substring(s[i].indexOf(">")+1,s[i].length);
+                                }
+                              }
+                              s =  s.join("");
+                              s = s.substring(0,chop-1);
+                              return s;
+                            }
+                            var project ="";
+                            function showpostlabel(json) {
+                              j = (showRandomImgp) ? Math.floor((imgrp.length+1)*Math.random()) : 0;
+                              img  = new Array();
+                              for (var i = 0; i < 10; i++) {
+                                var entry = json.feed.entry[i];
+                                var posttitle = entry.title.$t;
+                                var pcm;
+                                var posturl;
+                                if (i == json.feed.entry.length) break;
+                                for (var k = 0; k < entry.link.length; k++) {
+                                  if (entry.link[k].rel == 'alternate') {
+                                    posturl = entry.link[k].href;
+                                    break;
+                                  }
+                                }
+                                for (var k = 0; k < entry.link.length; k++) {
+                                  if (entry.link[k].rel == 'replies' && entry.link[k].type == 'text/html') {
+                                    pcm = entry.link[k].title.split(" ")[0];
+                                    break;
+                                  }
+                                }
+                                if ("content" in entry) {
+                                  var postcontent = entry.content.$t;}
+                                else
+                                  if ("summary" in entry) {
+                                    var postcontent = entry.summary.$t;}
+                                  else var postcontent = "";
+                                postdate = entry.published.$t;
+                                if(j>imgrp.length-1) j=0;
+                                img[i] = imgrp[j];
+                                s = postcontent	; a = s.indexOf("<img"); b = s.indexOf("src=\"",a); c = s.indexOf("\"",b+5); d = s.substr(b+5,c-b-5);
+                                if((a!=-1)&&(b!=-1)&&(c!=-1)&&(d!="")) img[i] = d;
+                                //cmtext = (text != 'no') ? '<i><font color="'+acolor+'">('+pcm+' '+text+')</font></i>' : '';
+                                var month = [1,2,3,4,5,6,7,8,9,10,11,12];
+                                var month2 = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+                                var day = postdate.split("-")[2].substring(0,2);
+                                var m = postdate.split("-")[1];
+                                var y = postdate.split("-")[0];
+                                for(var u2=0;u2<month.length;u2++){
+                                  if(parseInt(m)==month[u2]) {
+                                    m = month2[u2] ; break;
+                                  }
+                                }
+                                  var trtd = "<div class='date-posts'>"+
+                                    "<div class='post-outer'>"+
+                                    "<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>"+
+                                    "<div data-delay='100' data-speed='600' style='overflow: hidden; clear: both; transition: all 600ms ease; opacity: 1;' class='post-body entry-content lazy-load-box effect-slideup'>"+
+                                    "<h3 class='post-title'><a href='" + posturl + "'>" + posttitle + "<</a></h3>"+
+                                    "<div class='post-header'><div class='post-header-line-1'></div></div>"+
+                                    "<div>"+
+                                    "<div style='float:left; padding:0px 10px 5px 0px;overflow:hidden;height:180px'>"+
+                                    "<div class='cover'><div style='background-image: url(" + img[i] + "); display: block;' data-original='" + img[i] + "' class='cover_bg image-lazy'></div></div>"+
+                                    "</div>"+
+                                    "<div class='posts-description'>" + removeHtml( postcontent,400 ) + "</div>"+
+                                    "</div>"+
+                                    "<div style='float:left;font-size:13px;padding:5px 10px;margin-top:8px;color:#b2b935' class='readmore'> ( ngày " + day + " tháng " + m + " năm " + y + ")</div>"+
+                                    "<div style='float:right;font-size:13px;padding:5px 10px;margin-top:8px' class='readmore'>"+
+                                    "<a style='color:#b2b935' href='" + posturl + "'>Read more </a>"+
+                                    "</div></div></div></div></div>";
+                                  project+= trtd;
+                                j++;
+                              }
+                              document.write('<div class="date-outer">' + project + ' </div>');
+                                $("#project-planadd").owlCarousel();
+
+                            }
+                            //]]>
+                                                                                    </script>
+                                                                                    <script src="/feeds/posts/default/-/APT?max-results=20&amp;orderby=published&amp;alt=json-in-script&amp;callback=showpostlabel"></script>
+                                                                                </b:if>
                                                                                 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
                                                                                     <b:if cond='data:blog.pageType != &quot;item&quot;'>
                                                                                         <script type='text/javascript'>
@@ -2135,170 +2391,18 @@
                                                             </b:widget>
                                                         </b:section>
                                                     </div>
-                                                </div>
-                                                <b:if cond='data:blog.url != data:blog.homepageUrl'>
-                                                    <style>
-                                                        .caroufredsel_prev,
-                                                        .caroufredsel_next {
-                                                        background: url(http://livedemo00.template-help.com/joomla_49574/templates/theme1972/images/template/slider-pagination.gif) no-repeat #dca449;
-                                                        position: absolute;
-                                                        bottom: 0;
-                                                        display: block;
-                                                        height: 35px !important;
-                                                        width: 35px !important;
-                                                        -webkit-transition: all 0.5s ease;
-                                                        -moz-transition: all 0.5s ease;
-                                                        -o-transition: all 0.5s ease;
-                                                        transition: all 0.5s ease;
-                                                        }
-                                                        .caroufredsel_prev:hover,
-                                                        .caroufredsel_next:hover {
-                                                        background-color: #363636;
-                                                        }
-                                                        .caroufredsel_prev span,
-                                                        .caroufredsel_next span {
-                                                        display: block;
-                                                        cursor: pointer;
-                                                        -webkit-transition: all 0.5s ease;
-                                                        -moz-transition: all 0.5s ease;
-                                                        -o-transition: all 0.5s ease;
-                                                        transition: all 0.5s ease;
-                                                        }
-                                                        .caroufredsel_prev {
-                                                        right: 35px;
-                                                        background-position: 13px 9px;
-                                                        }
-                                                        .caroufredsel_next {
-                                                        right: 0px;
-                                                        background-position: -23px 9px;
-                                                        }
-                                                        /*Pagination*/
-                                                        .caroufredsel_pagination {
-                                                        text-align: center;
-                                                        }
-                                                        .caroufredsel_pagination a {
-                                                        display: inline-block;
-                                                        padding: 0 0.5em;
-                                                        }
-                                                        .caroufredsel_prev,
-                                                        .caroufredsel_next {
-                                                        background: url(http://livedemo00.template-help.com/joomla_49574/templates/theme1972/images/template/slider-pagination.gif) no-repeat #ffffff !important;
-                                                        cursor:pointer;
-                                                        }
-                                                        .caroufredsel_prev:hover,
-                                                        .caroufredsel_next:hover {
-                                                        background-color: #363636 !important;
-                                                        }
-                                                        .caroufredsel_prev {
-                                                        background-position: 13px -26px  !important;
-                                                        }
-                                                        .caroufredsel_prev:hover {
-                                                        background-position: 13px 9px  !important;
-                                                        }
-                                                        .caroufredsel_next {
-                                                        background-position: -29px 9px  !important;
-                                                        }
-                                                        .caroufredsel_next:hover {
-                                                        background-position: -29px -26px  !important;
-                                                        }
-                                                        div.disabled{
-                                                        cursor:inherit;
-                                                        }
-                                                        h3 {margin-bottom:20px;}
-                                                        a.gal:hover span {
-                                                        background-position:center center !important;
-                                                        }a.gal:hover img {
-                                                        opacity: 0.6;
-                                                        }
-                                                        a.gal span {
-                                                        bottom: 0;
-                                                        display: block;
-                                                        left: 0;
-                                                        position: absolute;
-                                                        right: 0;
-                                                        top: 0;
-                                                        transition: all 0.5s ease 0s;
-                                                        }
-                                                        h3 {
-                                                        /*border-bottom: 1px solid #B7B7B7;*/
-                                                        color: #333333;
-                                                        font-size: 25px;
-                                                        line-height: 25px;
-                                                        margin-bottom: 17px;
-                                                        padding-bottom: 6px;
-                                                        padding-top:0;margin-top:0;
-                                                        font-family:&#39;Trebuchet MS&#39;,Arial,Helvetica,sans-serif;
-                                                        text-transform: uppercase;
-                                                        }
-                                                        a.btn {
-                                                        color: #B2B935;
-                                                        display: inline-block;
-                                                        margin-top: 12px;
-                                                        text-decoration: underline;
-                                                        }
-                                                        .page1 .text1 {
-                                                        line-height: 17px;
-                                                        margin-bottom: 5px;
-                                                        }
-                                                        .text1 {
-                                                        color: #B2B935;
-                                                        font: bold 16px/19px &#39;Open Sans&#39;,sans-serif;
-                                                        margin-bottom: 4px;
-                                                        text-transform: uppercase;
-                                                        }
-                                                        .gallery1 {width:960px;clear:both;margin-left:-10px;}
-                                                        a.gal img {
-                                                        box-shadow: 0 0 0 #FFFFFF;
-                                                        transition: all 0.5s ease 0s;
-                                                        }
-                                                        .gallery1 a.gal {
-                                                        margin-bottom: 12px;
-                                                        }
-                                                        a.gal {
-                                                        display: block;
-                                                        position: relative;
-                                                        }
-                                                        .grid_3 {
-                                                        width: 226px;
-                                                        text-align:center;
-                                                        }
-                                                        .grid_12 {width:940px;position:relative;}
-                                                        .grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {
-                                                        display: inline;
-                                                        float: left;
-                                                        margin-left: 10px !important;
-                                                        margin-right: 5px !important;
-                                                        }
-                                                        /*#project3 {margin-right:0;}*/
-                                                        a.prev, a.next {
-                                                        position:absolute !important;
-                                                        left:auto !important;
-                                                        }
-                                                        a.prev {
-                                                        right:26px !important;
-                                                        top:0 !important;
-                                                        }
-                                                        a.next {
-                                                        right:-26px !important;
-                                                        top:0 !important;
-                                                        }
-                                                        .image_carousel .caroufredsel_wrapper a {float:none !important;}
-                                                    </style>
-                                                </b:if>
-                                                <b:if cond='data:blog.url == data:blog.homepageUrl'>
-                                                    <div class='col-md-4'>
-                                                        <div class='column-right-inner'>
-                                                            <aside>
-                                                                <macro:include id='main-column-right-sections' name='sections'>
-                                                                    <macro:param default='2' name='num'/>
-                                                                    <macro:param default='sidebar-right' name='idPrefix'/>
-                                                                    <macro:param default='sidebar' name='class'/>
-                                                                    <macro:param default='true' name='includeBottom'/>
-                                                                </macro:include>
-                                                            </aside>
-                                                        </div>
+                                                <div class='col-md-4'>
+                                                    <div class='column-right-inner'>
+                                                        <aside>
+                                                            <macro:include id='main-column-right-sections' name='sections'>
+                                                                <macro:param default='2' name='num'/>
+                                                                <macro:param default='sidebar-right' name='idPrefix'/>
+                                                                <macro:param default='sidebar' name='class'/>
+                                                                <macro:param default='true' name='includeBottom'/>
+                                                            </macro:include>
+                                                        </aside>
                                                     </div>
-                                                </b:if>
+                                                </div>
                                              </div>
                                         </div>
                                         <div style='clear: both'/>

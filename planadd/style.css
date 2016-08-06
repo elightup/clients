@@ -204,7 +204,7 @@ h2 {
 
 h3.post-title, .comments h4 {
     font: normal normal 19px 'arial', Trebuchet, Verdana, sans-serif;
-    margin: .75em 0 0;
+    margin: .75em 0 10px;
     text-transform: inherit;
     text-align: left !important;
 }
