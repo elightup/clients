@@ -206,6 +206,7 @@ h3.post-title, .comments h4 {
     font: normal normal 19px 'arial', Trebuchet, Verdana, sans-serif;
     margin: .75em 0 0;
     text-transform: inherit;
+    text-align: left !important;
 }
 
 .post-body {
