@@ -769,7 +769,6 @@ nav {
     left: 50%;
     margin-left: -3px;
     width: 5px;
-    background: url(../images/arrows.png) 0 0 no-repeat;
     height: 4px;
     bottom: 14px;
     pointer-events: none;
@@ -1335,7 +1334,7 @@ div.thumbnails img.selected {
 }
 
 .camera_loader {
-    background: url(&quot;https://sites.google.com/a/add-group.net/planadd/htmlboxtesting/camera-loader.gif&quot;) no-repeat scroll center center rgba(255, 255, 255, 0.9);
+    background: url(https://sites.google.com/a/add-group.net/planadd/htmlboxtesting/camera-loader.gif) no-repeat scroll center center rgba(255, 255, 255, 0.9);
 }
 
 .camera_caption div {
@@ -1365,7 +1364,7 @@ ul {
 }
 
 .links ul li a:after {
-    background: url(&quot;https://sites.google.com/site/phongcachvietnampro/abc/icon1.png&quot;) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url(https://sites.google.com/site/phongcachvietnampro/abc/icon1.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     content: & quot;
     & quot;;
     height: 26px;
@@ -1376,7 +1375,7 @@ ul {
 }
 
 .links ul li + li a:after {
-    background: url(&quot;https://sites.google.com/site/phongcachvietnampro/abc/icon2.png&quot;) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url(https://sites.google.com/site/phongcachvietnampro/abc/icon2.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     height: 29px;
     top: -4px;
 }
@@ -1394,7 +1393,7 @@ ul {
 }
 
 .links ul li + li + li a:after {
-    background: url(&quot;https://sites.google.com/site/phongcachvietnampro/abc/icon3.png&quot;) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url(https://sites.google.com/site/phongcachvietnampro/abc/icon3.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     height: 33px;
     left: -39px;
     top: -7px;
@@ -1402,7 +1401,7 @@ ul {
 }
 
 .links ul li + li + li + li a:after {
-    background: url(&quot;https://sites.google.com/site/phongcachvietnampro/abc/icon4.png&quot;) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url(https://sites.google.com/site/phongcachvietnampro/abc/icon4.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     height: 25px;
     left: -39px;
     top: 0;
