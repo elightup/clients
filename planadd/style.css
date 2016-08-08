@@ -1460,7 +1460,7 @@ ul {
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.4);
     text-align: left;
-    height: 500px;
+    height: 536px;
 }
 
 .camera_caption h2 {
@@ -1470,13 +1470,7 @@ ul {
     line-height: 30px;
 }
 
-.camera_caption
-
-&
-gt
-
-;
-div p {
+.camera_caption div p {
     line-height: 24px;
     padding-top: 25px;
     font-size: 14px;
