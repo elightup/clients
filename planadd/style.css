@@ -65,10 +65,6 @@ a:hover {
 }
 
 .content-inner {
-    padding: 10px 40px;
-}
-
-.content-inner {
     background-color: #ffffff;
 }
 
@@ -324,90 +320,6 @@ h3.post-title, .comments h4 {
 
 .footer-outer {
     border-top: 1px dashed #bbbbbb;
-}
-
-/* Mobile
------------------------------------------------ */
-body.mobile {
-    background-size: auto;
-}
-
-.mobile .body-fauxcolumn-outer {
-    background: transparent none repeat scroll top left;
-}
-
-.mobile .body-fauxcolumn-outer .cap-top {
-    background-size: 100% auto;
-}
-
-.mobile .content-outer {
-    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
-    box-shadow: 0 0 3px rgba(0, 0, 0, .15);
-}
-
-body.mobile .AdSense {
-    margin: 0 -0;
-}
-
-.mobile .tabs-inner .widget ul {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.mobile .post {
-    margin: 0;
-}
-
-.mobile .main-inner .column-center-inner .section {
-    margin: 0;
-}
-
-.mobile .date-header span {
-    padding: 0.1em 10px;
-    margin: 0 -10px;
-}
-
-.mobile h3.post-title {
-    margin: 0;
-}
-
-.mobile .blog-pager {
-    background: transparent none no-repeat scroll top center;
-}
-
-.mobile .footer-outer {
-    border-top: none;
-}
-
-.mobile .main-inner, .mobile .footer-inner {
-    background-color: #ffffff;
-}
-
-.mobile-index-contents {
-    color: #666666;
-}
-
-.mobile-link-button {
-    background-color: #333333;
-}
-
-.mobile-link-button a:link, .mobile-link-button a:visited {
-    color: #ffffff;
-}
-
-.mobile .tabs-inner .section:first-child {
-    border-top: none;
-}
-
-.mobile .tabs-inner .PageList .widget-content {
-    background-color: #eeeeee;
-    color: #000000;
-    border-top: 1px solid #dddddd;
-    border-bottom: 1px solid #dddddd;
-}
-
-.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
-    border-left: 1px solid #dddddd;
 }
 
 .tabs-inner {
