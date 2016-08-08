@@ -218,8 +218,8 @@ h3.post-title, .comments h4 {
     overflow-x: hidden;
 }
 
-.post-body img, 
-.post-body .tr-caption-container, 
+.post-body img,
+.post-body .tr-caption-container,
 .Profile img, .Image img,
 .BlogList .item-thumbnail img {
     padding: 2px;
@@ -1557,11 +1557,11 @@ div p {
 }
 
 .home-slider .slider .camera_next span {
-    background: url(&quot;https://sites.google.com/a/add-group.net/planadd/right%5B1%5D.png&quot;) no-repeat scroll -12px 0 rgba(0, 0, 0, 0);
+    background: url(https://sites.google.com/a/add-group.net/planadd/right%5B1%5D.png) no-repeat scroll -12px 0 rgba(0, 0, 0, 0);
 }
 
 .home-slider .slider .camera_prev span {
-    background: url(&quot;https://sites.google.com/a/add-group.net/planadd/left.png&quot;) no-repeat scroll -12px 0 rgba(0, 0, 0, 0);
+    background: url(https://sites.google.com/a/add-group.net/planadd/left.png) no-repeat scroll -12px 0 rgba(0, 0, 0, 0);
 }
 
 .caroufredsel_prev,
@@ -1784,4 +1784,3 @@ a.next {
 .comment {
     display: none !important;
 }
-            
