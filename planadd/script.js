@@ -1,7 +1,7 @@
 jQuery( document ).ready( function ( $ )
 {
     'use strict';
-    
+
     function menuMobile() {
         var mobileClass = 'mobile-menu-open';
         var $body = $( 'body' );
@@ -25,7 +25,7 @@ jQuery( document ).ready( function ( $ )
             }
         } );
     }
-    
+
     /**
      * Add toggle dropdown icon for mobile menu.
      * @param $container
@@ -49,5 +49,7 @@ jQuery( document ).ready( function ( $ )
             $this.next( '.children, .sub-menu' ).slideToggle();
         } );
     }
+
+    menuMobile();
     initMobileNavigation( $( '.primary-menu-mobile' ) );
 } );
