@@ -1624,6 +1624,7 @@ a.btn {
 .page-nhan #project-planadd a.gal {
     padding-top:0;
     height:200px;
+    
 }
 
 #project-planadd a.gal img {
@@ -1631,6 +1632,11 @@ a.btn {
     transition: all 0.5s ease 0s;
     width: 100%;
     height:auto;
+}
+
+.page-nhan #project-planadd a.gal img{
+    display:none;
+   
 }
 
 #project-planadd .recent-post__title a {
