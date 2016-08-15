@@ -758,6 +758,9 @@ ul li {
     line-height: 19px;
     text-align: left;
 }
+.sf-menu li ul li.current {
+	color: #b2b935
+}
 
 .sf-menu li ul li + li {
     margin-top: 2px;
