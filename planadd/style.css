@@ -1649,6 +1649,8 @@ a.btn {
     text-transform: uppercase;
     display: inherit;
     color: #131313;
+    height: 19px;
+    overflow: hidden;
 }
 
 .page-nhan  #project-planadd .recent-post__title a{
