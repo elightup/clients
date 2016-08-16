@@ -1609,6 +1609,7 @@ a.btn {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    text-align:left;
 }
 
 #project-planadd .item {
