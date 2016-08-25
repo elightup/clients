@@ -1247,8 +1247,8 @@ div.thumbnails img.selected {
 .recent-post .recent-post-title {
     padding-bottom: 20px;
 }
-.page-nhan .a.btn {
-	display:none;
+.page-nhan a.btn {
+    display: none !important;
 }
 .camera_loader {
     background: url(https://sites.google.com/a/add-group.net/planadd/htmlboxtesting/camera-loader.gif) no-repeat scroll center center rgba(255, 255, 255, 0.9);
