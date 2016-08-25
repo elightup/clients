@@ -1227,10 +1227,10 @@ div.thumbnails img.selected {
 }
 
 .recent-post .recent-post__title {
-    background: rgba(0, 0, 0, 0.77) none repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
     color: #b2b935;
     font: 16px/19px "Open Sans", sans-serif;
-    padding: 5px;
+    padding: 0px 5px;
     position: absolute;
     text-align: center;
     text-transform: uppercase;
@@ -1247,7 +1247,9 @@ div.thumbnails img.selected {
 .recent-post .recent-post-title {
     padding-bottom: 20px;
 }
-
+.page-nhan .a.btn {
+	display:none;
+}
 .camera_loader {
     background: url(https://sites.google.com/a/add-group.net/planadd/htmlboxtesting/camera-loader.gif) no-repeat scroll center center rgba(255, 255, 255, 0.9);
 }
