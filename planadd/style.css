@@ -1807,7 +1807,7 @@ a.next {
 }
 
 .posts-home-page .home-post-image{
-    width: 250px;
+    width: 262px;
     float: left;
     display: inline-block;
     max-height: 200px;
@@ -1815,7 +1815,7 @@ a.next {
 
 }
 .posts-home-page .except{
-    padding-left:270px;
+    padding-left:292px;
 }
 
 @media (max-width: 1200px){
