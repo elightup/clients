@@ -1815,6 +1815,11 @@ a.next {
     overflow: hidden;
 
 }
+.posts-home-page .home-post-image img{
+    padding:0;
+    border:0;
+}
+
 .posts-home-page .except{
     padding-left:292px;
 }
