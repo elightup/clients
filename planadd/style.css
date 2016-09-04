@@ -1824,6 +1824,14 @@ a.next {
     padding-left:292px;
 }
 
+.posts-his-ach .home-post-image {
+	width:150px;
+}
+
+.posts-his-ach .except{
+    padding-left: 280px;
+}
+
 @media (max-width: 1200px){
     #project-planadd a.gal img {
         min-height: 0;
