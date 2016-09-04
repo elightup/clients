@@ -1811,7 +1811,7 @@ a.next {
     width: 262px;
     float: left;
     display: inline-block;
-    max-height: 200px;
+    height: 200px;
     overflow: hidden;
 
 }
