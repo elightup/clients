@@ -1826,10 +1826,15 @@ a.next {
 
 .posts-his-ach .home-post-image {
 	width:150px;
+	height:150px;
 }
 
 .posts-his-ach .except{
-    padding-left: 280px;
+    padding-left: 180px;
+}
+
+.posts-his-ach .readmore{
+   display:none !important;
 }
 
 @media (max-width: 1200px){
