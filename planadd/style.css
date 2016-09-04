@@ -468,6 +468,7 @@ ul, li {
 
 .widget-content.list-label-widget-content > ul {
     margin-left: 0;
+    padding:0;
 }
 
 .list.styled.custom-list > ul li {
