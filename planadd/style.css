@@ -1826,7 +1826,8 @@ a.next {
 
 .posts-his-ach .home-post-image {
 	width:150px;
-	height:150px;
+	max-height:150px;
+	height:auto;
 }
 
 .posts-his-ach .except{
