@@ -1832,6 +1832,13 @@ a.next {
 	height:auto;
 }
 
+.posts-his-ach .home-post-image img {
+    padding: 0;
+    border: 0;
+    width: 150px;
+    max-width:150px;
+}
+
 .posts-his-ach .except{
     padding-left: 160px;
 }
