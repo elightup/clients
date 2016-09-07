@@ -1419,6 +1419,7 @@ ul {
     bottom: 17px;
     top: auto;
     left: 50%;
+    display:none;
 }
 
 .home-slider .slider .camera_prev:hover, .home-slider .slider .camera_next:hover {
