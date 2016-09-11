@@ -1236,8 +1236,8 @@ div.thumbnails img.selected {
     position: absolute;
     text-align: center;
     text-transform: uppercase;
-    left: 15px;
-    right: 15px;
+    left: 10px;
+    right: 10px;
     bottom: 0;
 }
 
@@ -1358,7 +1358,7 @@ ul {
 }
 
 .home-slider .slider .camera_target_content .cameraContent .camera_caption {
-    width: 227px;
+    width: 270px;
     bottom: 0 !important;
     /* top:50%;
     margin-top:-80px;
@@ -1372,7 +1372,7 @@ ul {
 .home-slider .slider .camera_target_content .cameraContent .camera_caption div {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    width: 227px;
+    width: 270px;
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.4);
     text-align: left;
