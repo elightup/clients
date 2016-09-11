@@ -491,7 +491,7 @@ ul, li {
 .post-body.entry-content .gallery1{
     display:none;
 }
-
+/*
 @media (min-width: 1200px) {
     .widget-content.list-label-widget-content > ul li {
         font-size: 15px;
@@ -503,7 +503,7 @@ ul, li {
         font-size: 15px;
     }
 }
-
+*/
 .widget-content.list-label-widget-content > ul li {
     background-color: #f4f5f5;
 }
@@ -1846,7 +1846,7 @@ a.next {
 .posts-his-ach .readmore{
    display:none !important;
 }
-
+/*
 @media (max-width: 1200px){
     #project-planadd a.gal img {
         min-height: 0;
@@ -1870,6 +1870,7 @@ a.next {
         min-height: 0;
     }
 }
+*/
 .mobile #project-planadd .col-md-3 {
     width: 50%;
 }
