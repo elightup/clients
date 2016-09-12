@@ -1856,6 +1856,10 @@ a.next {
     max-width:150px;
 }
 
+.posts-his-ach a:hover h3{
+    color: #b2b935;
+}
+
 .posts-his-ach .except{
     padding-left: 160px;
 }
