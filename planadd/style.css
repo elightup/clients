@@ -1627,13 +1627,13 @@ a.btn {
     width:100%;
     overflow: hidden;
     padding-top:75%;
-    background-size: cover;
     background-position: 50% 50%;
 }
 
 .page-nhan #project-planadd a.gal {
     padding-top:0;
     height:200px;
+
     
 }
 
