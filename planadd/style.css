@@ -1649,7 +1649,8 @@ a.btn {
    
 }
 
-#project-planadd .recent-post__title a {
+#project-planadd .recent-post__title a,
+.posts-his-ach a{
     font:16px/19px 'Open Sans', sans-serif;
     margin-bottom: 10px;
     margin-top: 15px;
@@ -1664,7 +1665,8 @@ a.btn {
     font-weight:600;
 }
 
-#project-planadd .recent-post__title a:hover {
+#project-planadd .recent-post__title a:hover ,
+.posts-his-ach a:hover{
     text-decoration: underline;
     color: #b2b935;
 }
