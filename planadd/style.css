@@ -1589,6 +1589,12 @@ h3 {
     text-transform: uppercase;
 }
 
+
+h3.post-title.history-achievement {
+    padding-left: 160px;
+    font-weight: bold;
+}
+
 a.btn {
     color: #B2B935;
     display: inline-block;
@@ -1647,12 +1653,6 @@ a.btn {
 .page-nhan #project-planadd a.gal img{
     display:none;
    
-}
-
-.posts-his-ach a{
-    font:16px/19px 'Open Sans', sans-serif;
-    color: #131313;
-    overflow: hidden;
 }
 
 
