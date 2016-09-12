@@ -1836,8 +1836,10 @@ a.next {
 }
 
 .posts-his-ach .home-post-image {
-	width:130px;
-	height:86px;
+    width: 130px;
+    height: 86px;
+    background-position: 50% 50%;
+    background-size: 200px;
 }
 
 .posts-his-ach .home-post-image img {
