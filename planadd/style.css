@@ -1856,7 +1856,7 @@ a.next {
     max-width:150px;
 }
 
-.posts-his-ach a:hover h3{
+.posts-his-ach a:hover h3.post-title.history-achievement{
     color: #b2b935;
 }
 
