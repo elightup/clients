@@ -1837,6 +1837,12 @@ a.next {
 .posts-home-page .home-post-image img{
     padding:0;
     border:0;
+    
+}
+#project-planadd a.gal img,
+.posts-his-ach .home-post-image img,
+.posts-home-page .home-post-image img {
+	max-width: initial;	
 }
 
 .posts-home-page .except{
