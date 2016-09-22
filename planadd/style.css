@@ -1845,14 +1845,14 @@ a.next {
     padding-left:292px;
 }
 
-.posts-his-ach .home-post-image {
+.posts-his-ach .posts-his-ach-image {
     width: 130px;
     height: 86px;
     background-position: 50% 50%;
     background-size: 200px;
 }
 
-.posts-his-ach .home-post-image img {
+.posts-his-ach .posts-his-ach-image img {
     padding: 0;
     border: 0;
     width: 150px;
@@ -2069,7 +2069,7 @@ a.next {
 }
 
 #project-planadd a.gal img,
-.posts-his-ach .home-post-image img,
+.posts-his-ach .posts-his-ach-image img,
 .posts-home-page .home-post-image img {
 	max-width: initial !important;	
 }
