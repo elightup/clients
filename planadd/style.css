@@ -1839,11 +1839,7 @@ a.next {
     border:0;
     
 }
-#project-planadd a.gal img,
-.posts-his-ach .home-post-image img,
-.posts-home-page .home-post-image img {
-	max-width: initial;	
-}
+
 
 .posts-home-page .except{
     padding-left:292px;
@@ -2070,4 +2066,10 @@ a.next {
 	-o-transform: translateY(100px) skewX(-45deg) skewY(45deg);
 	-ms-transform: translateY(100px) skewX(-45deg) skewY(45deg);
 	transform: translateY(100px) skewX(-45deg) skewY(45deg);
+}
+
+#project-planadd a.gal img,
+.posts-his-ach .home-post-image img,
+.posts-home-page .home-post-image img {
+	max-width: initial !important;	
 }
