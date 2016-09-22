@@ -1848,7 +1848,7 @@ a.next {
 .posts-his-ach .posts-his-ach-image {
     width: 130px;
     height: 86px;
-    float:left
+    float:left;
     display: inline-block;
     overflow: hidden;
 }
