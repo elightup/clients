@@ -1633,7 +1633,8 @@ a.btn {
     position: relative;
     width:100%;
     overflow: hidden;
-    padding-top:75%;
+    padding-top: 0;
+    height: 200px;
     background-position: 50% 50%;
 }
 
