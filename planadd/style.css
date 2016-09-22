@@ -1848,15 +1848,13 @@ a.next {
 .posts-his-ach .posts-his-ach-image {
     width: 130px;
     height: 86px;
-    background-position: 50% 50%;
-    background-size: 200px;
+    float:left
 }
 
 .posts-his-ach .posts-his-ach-image img {
     padding: 0;
     border: 0;
-    width: 150px;
-    max-width:150px;
+  
 }
 
 .posts-his-ach a:hover h3.post-title.history-achievement{
