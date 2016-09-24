@@ -1593,7 +1593,7 @@ h3 {
 h3.post-title.history-achievement {
     padding-left: 160px;
     font-weight: bold;
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
 
 a.btn {
